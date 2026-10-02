@@ -1,0 +1,69 @@
+{
+  "upstream": "mgedmin/check-manifest",
+  "commit": "5cdb776d4ad547518002ab33528b880b51378b48",
+  "license": "MIT",
+  "runtime_reuse": "none; all new AI-assisted implementation",
+  "files": [
+    {
+      "path": "check_manifest.py",
+      "sha256": "5d40de3ba2825145b876c740b89b7ab54abbf576349a231875cbf39449bb28a0",
+      "reviewed": "entire 1225-line runtime/CLI/releaser module",
+      "url": "https://github.com/mgedmin/check-manifest/blob/5cdb776d4ad547518002ab33528b880b51378b48/check_manifest.py"
+    },
+    {
+      "path": "setup.py",
+      "sha256": "424ab04995535d33ec85700b03e30c6e4d29fc57d0f7c251f2d93fbbeaa88b71",
+      "reviewed": "entire packaging entry, 79 lines",
+      "url": "https://github.com/mgedmin/check-manifest/blob/5cdb776d4ad547518002ab33528b880b51378b48/setup.py"
+    },
+    {
+      "path": "LICENSE.rst",
+      "sha256": "bf6af43e995943b187d05a56e5f93b17d786b268291286ca9b52349b86b9d8a9",
+      "reviewed": "entire original exact MIT license",
+      "url": "https://github.com/mgedmin/check-manifest/blob/5cdb776d4ad547518002ab33528b880b51378b48/LICENSE.rst"
+    },
+    {
+      "path": "MANIFEST.in",
+      "sha256": "8c7cd4aa88afc8949e6a5c758e247211192c1a84c21ccc0d2a2f880093e01bd7",
+      "reviewed": "entire file",
+      "url": "https://github.com/mgedmin/check-manifest/blob/5cdb776d4ad547518002ab33528b880b51378b48/MANIFEST.in"
+    },
+    {
+      "path": "setup.cfg",
+      "sha256": "9b1c38413400300dee0c7fdf15ba0e6a382378f637ccdb31815ba6d221aa9b79",
+      "reviewed": "entire file",
+      "url": "https://github.com/mgedmin/check-manifest/blob/5cdb776d4ad547518002ab33528b880b51378b48/setup.cfg"
+    },
+    {
+      "path": "tox.ini",
+      "sha256": "7b1d14140034ae9f48f9fd6306bf3b766c7075da9cd56f39cfdf03ba2b2df017",
+      "reviewed": "entire file",
+      "url": "https://github.com/mgedmin/check-manifest/blob/5cdb776d4ad547518002ab33528b880b51378b48/tox.ini"
+    },
+    {
+      "path": "README.rst",
+      "sha256": "cb5bcb56014852e123fc861694da69363788c53b7384b750f16a4e8a892131a1",
+      "reviewed": "entire 162-line file",
+      "url": "https://github.com/mgedmin/check-manifest/blob/5cdb776d4ad547518002ab33528b880b51378b48/README.rst"
+    },
+    {
+      "path": ".github/workflows/build.yml",
+      "sha256": "f511be2b2126068a20000168b3b95e60b7823e8242449d34489988edb96adac0",
+      "reviewed": "entire 148-line file; target-VCS/build execution and external reporting removed",
+      "url": "https://github.com/mgedmin/check-manifest/blob/5cdb776d4ad547518002ab33528b880b51378b48/.github/workflows/build.yml"
+    },
+    {
+      "path": "tests.py",
+      "sha256": "bd08fe262a4443baba014d738e64d6327c2994e06ca2911ae704a3aca3a227f5",
+      "reviewed": "selected complete harness, archive/name/normalization/generated-policy tests, CLI class and integration comparison class; unrelated VCS/platform tests excluded",
+      "url": "https://github.com/mgedmin/check-manifest/blob/5cdb776d4ad547518002ab33528b880b51378b48/tests.py",
+      "ranges": "1-85,200-347,757-835,1583-1820"
+    }
+  ],
+  "scope": "independent existing source archive vs caller-trusted exact path manifest, not all check-manifest behaviors",
+  "whole_upstream_repository_audit": "OPEN - unrelated VCS/release/platform tests/helper scripts not fully audited",
+  "primary_format_references": [
+    "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT",
+    "https://docs.python.org/3/library/tarfile.html"
+  ]
+}

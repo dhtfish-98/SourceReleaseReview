@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "root": "sample-1.0",
+  "files": [
+    "README.txt",
+    "setup.py"
+  ],
+  "allowed_generated": [
+    "PKG-INFO"
+  ]
+}
