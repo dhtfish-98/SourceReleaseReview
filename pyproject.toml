@@ -6,10 +6,10 @@ build-backend = "setuptools.build_meta"
 name = "source-release-review"
 version = "0.1.2"
 description = "Bounded offline source archive and trusted path manifest comparison"
-readme = "README.md"
+readme = "项目文档/README.md"
 requires-python = ">=3.11"
 license = "MIT"
-license-files = ["LICENSE"]
+license-files = ["项目文档/LICENSE"]
 authors = [{name = "dhtfish98"}]
 maintainers = [{name = "dhtfish98"}]
 dependencies = []

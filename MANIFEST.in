@@ -1,4 +1,4 @@
-include LICENSE README.md ORIGIN.md DEFENSIVE_SCOPE.md VALIDATION.md SOURCE_AUDIT.json requirements-dev.txt
+include 项目文档/LICENSE 项目文档/README.md 项目文档/ORIGIN.md 项目文档/DEFENSIVE_SCOPE.md 项目文档/VALIDATION.md SOURCE_AUDIT.json requirements-dev.txt
 recursive-include src *.py py.typed
 recursive-include tests *.py
 recursive-include scripts *.py
@@ -14,13 +14,13 @@ prune dist
 # Current formal source inventory, including provenance and tests.
 include .github/workflows/ci.yml
 include .gitignore
-include DEFENSIVE_SCOPE.md
-include LICENSE
-include ORIGIN.md
-include README.md
+include 项目文档/DEFENSIVE_SCOPE.md
+include 项目文档/LICENSE
+include 项目文档/ORIGIN.md
+include 项目文档/README.md
 include SOURCE_AUDIT.json
 include SOURCE_REVIEW_MANIFEST.json
-include VALIDATION.md
+include 项目文档/VALIDATION.md
 include examples/release-manifest.json
 include examples/sample-corrupt.zip
 include examples/sample-extra.zip
@@ -47,3 +47,18 @@ include tests/test_manifest.py
 include tests/test_provenance.py
 include tests/test_reader_capabilities.py
 include tests/test_structures.py
+
+# Directory layout: canonical docs and source build entry; generated trees are not sdist inputs.
+graft 项目文档
+include 构建.py 构建配置.json
+prune Build/源码
+prune Build/新构建
+prune Build/输出
+prune Build/环境
+prune Build/缓存
+prune Build/中间
+prune Build/临时
+global-exclude __pycache__ *.py[cod] .DS_Store
+
+# Original logical paths exist only in the staged compatibility view.
+include DEFENSIVE_SCOPE.md LICENSE ORIGIN.md README.md VALIDATION.md

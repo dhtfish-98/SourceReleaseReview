@@ -1,3 +1,5 @@
+> 目录已整理：文档在「项目文档」，构建、缓存与暂存输入在「Build」。从仓库根目录运行 `python3 构建.py --build`；如需使用本文原有源码命令，先运行 `python3 构建.py --stage --ci`，再进入 `Build/源码`。暂存会恢复原输入路径。现有版本和历史验证记录按各自提交理解。
+
 # SourceReleaseReview
 
 
@@ -48,6 +50,6 @@ OPEN retains observed violations and counters. PASS proves neither authentic sou
 
 Reports may show missing/explicitly allowed paths from the caller-trusted manifest. Untrusted archive names, including extras and unsafe names, are represented by SHA-256 and logical member index, never raw text. Indices are one-based and exclude tar PAX metadata headers. Host input paths, payload content, exception strings and archive comments are omitted. Archive/manifest/name hashes and counters remain metadata that should be handled privately.
 
-See [DEFENSIVE_SCOPE.md](DEFENSIVE_SCOPE.md) for supported structures and budgets, [ORIGIN.md](ORIGIN.md) for the frozen check-manifest source/license and implementation attribution, and [VALIDATION.md](VALIDATION.md) for actual validation and open evidence. CVP approval and any future model safety response remain OPEN.
+See [DEFENSIVE_SCOPE.md](<DEFENSIVE_SCOPE.md>) for supported structures and budgets, [ORIGIN.md](<ORIGIN.md>) for the frozen check-manifest source/license and implementation attribution, and [VALIDATION.md](<VALIDATION.md>) for actual validation and open evidence. CVP approval and any future model safety response remain OPEN.
 
 Local-file capability boundary: required OS flags must be exact positive integers. Descriptor walking also requires declared `os.open` directory-relative support. Missing, null, zero, boolean or otherwise invalid required capabilities return a controlled OPEN result before file access. Native Windows local-file reading is outside this POSIX profile.

@@ -37,17 +37,7 @@
     "tests/test_manifest.py",
     "tests/test_provenance.py",
     "tests/test_reader_capabilities.py",
-    "tests/test_structures.py",
-    "构建.py",
-    "构建配置.json",
-    "项目文档/DEFENSIVE_SCOPE.md",
-    "项目文档/LICENSE",
-    "项目文档/ORIGIN.md",
-    "项目文档/README.md",
-    "项目文档/VALIDATION.md",
-    "项目文档/历史/目录更新20261003/SOURCE_REVIEW_MANIFEST.json.public-c4c6b96b8b96.json",
-    "项目文档/历史/目录更新20261003/self-manifest.public-c4c6b96b8b96.json",
-    "项目文档/目录与构建.md"
+    "tests/test_structures.py"
   ],
   "allowed_generated": [
     "PKG-INFO",

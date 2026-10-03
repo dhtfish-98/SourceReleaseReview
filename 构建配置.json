@@ -1,0 +1,35 @@
+{
+  "schema": "project-build-layout.v1",
+  "project": "SourceReleaseReview",
+  "author": "dhtfish98",
+  "kind": "python",
+  "base_public_commit": "c4c6b96b8b968649f356b00ce6ae9c558208ac8c",
+  "restored_inputs": [
+    {
+      "original": "DEFENSIVE_SCOPE.md",
+      "stored": "项目文档/DEFENSIVE_SCOPE.md",
+      "sha256": "beb74117e89e6ac20c10808346f8eb4084f63019f51986584a1694e1a958c9a9"
+    },
+    {
+      "original": "LICENSE",
+      "stored": "项目文档/LICENSE",
+      "sha256": "c495cf46c88b22e05b0813035ecca8d0e1daebecbce5ea8eb60f2d3d97a0409c"
+    },
+    {
+      "original": "ORIGIN.md",
+      "stored": "项目文档/ORIGIN.md",
+      "sha256": "da801fe26ecbc404f57fa8ab9277b27bf3d0564f04b29dcef6ac664dbb2f81f5"
+    },
+    {
+      "original": "README.md",
+      "stored": "项目文档/README.md",
+      "sha256": "c29c63acc564fa681926dd57d9ba5bd0329657adb62439c0adfc7295b1309181"
+    },
+    {
+      "original": "VALIDATION.md",
+      "stored": "项目文档/VALIDATION.md",
+      "sha256": "3a881ea722740de4499475d56c0188a38275983acd864b8110ec168612707f5c"
+    }
+  ],
+  "platform_entries": []
+}
