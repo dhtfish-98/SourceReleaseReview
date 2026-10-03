@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT
-# New AI-assisted implementation; no check-manifest runtime reused.
+# New implementation by dhtfish98; no check-manifest runtime reused.
 """Read bounded real tar/ZIP structures and compare with a caller-trusted manifest.
 
 No extraction, source execution, VCS discovery, target import or build is performed.

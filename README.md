@@ -1,5 +1,8 @@
 # SourceReleaseReview
 
+
+New implementation author: **dhtfish98**. Current project version: **0.1.1**.
+
 Compare an existing local source-release archive with an independently trusted path manifest. The new implementation reads actual tar or ZIP records and payload spans, preserves duplicate/link/path-conflict evidence, and reports required omissions and unapproved extras. It never extracts the archive, executes archived source, discovers VCS files, runs a target build or rewrites a manifest.
 
 ```sh
@@ -45,4 +48,6 @@ OPEN retains observed violations and counters. PASS proves neither authentic sou
 
 Reports may show missing/explicitly allowed paths from the caller-trusted manifest. Untrusted archive names, including extras and unsafe names, are represented by SHA-256 and logical member index, never raw text. Indices are one-based and exclude tar PAX metadata headers. Host input paths, payload content, exception strings and archive comments are omitted. Archive/manifest/name hashes and counters remain metadata that should be handled privately.
 
-See [DEFENSIVE_SCOPE.md](DEFENSIVE_SCOPE.md) for supported structures and budgets, [ORIGIN.md](ORIGIN.md) for the frozen check-manifest source/license and AI-assisted contribution, and [VALIDATION.md](VALIDATION.md) for actual validation and open evidence. CVP approval and any future model safety response remain OPEN.
+See [DEFENSIVE_SCOPE.md](DEFENSIVE_SCOPE.md) for supported structures and budgets, [ORIGIN.md](ORIGIN.md) for the frozen check-manifest source/license and implementation attribution, and [VALIDATION.md](VALIDATION.md) for actual validation and open evidence. CVP approval and any future model safety response remain OPEN.
+
+Local-file capability boundary: required OS flags must be exact positive integers. Descriptor walking also requires declared `os.open` directory-relative support. Missing, null, zero, boolean or otherwise invalid required capabilities return a controlled OPEN result before file access. Native Windows local-file reading is outside this POSIX profile.

@@ -4,13 +4,14 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "source-release-review"
-version = "0.1.0"
+version = "0.1.1"
 description = "Bounded offline source archive and trusted path manifest comparison"
 readme = "README.md"
 requires-python = ">=3.11"
 license = "MIT"
 license-files = ["LICENSE", "THIRD_PARTY_LICENSES/check-manifest-MIT.txt"]
-authors = [{name = "SourceReleaseReview contributors"}]
+authors = [{name = "dhtfish98"}]
+maintainers = [{name = "dhtfish98"}]
 dependencies = []
 
 [project.scripts]

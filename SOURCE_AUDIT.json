@@ -2,7 +2,7 @@
   "upstream": "mgedmin/check-manifest",
   "commit": "5cdb776d4ad547518002ab33528b880b51378b48",
   "license": "MIT",
-  "runtime_reuse": "none; all new AI-assisted implementation",
+  "runtime_reuse": "none; all new implementation by dhtfish98",
   "files": [
     {
       "path": "check_manifest.py",
@@ -65,5 +65,6 @@
   "primary_format_references": [
     "https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT",
     "https://docs.python.org/3/library/tarfile.html"
-  ]
+  ],
+  "delivery_snapshot_note": "Local implementation/package observations in this record belong to the earlier delivery; current file digests and version are in SOURCE_REVIEW_MANIFEST.json. Upstream identities, hashes and review scope are retained."
 }
