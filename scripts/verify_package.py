@@ -27,7 +27,7 @@ def verify(wheel, sdist):
         prefix = metadata_path.rsplit("/", 1)[0]
         metadata = Parser().parsestr(package.read(metadata_path).decode())
         require(metadata["Name"] == "source-release-review", "name")
-        require(metadata["Version"] == "0.1.1", "version")
+        require(metadata["Version"] == "0.1.2", "version")
         require(metadata["Requires-Python"] == ">=3.11", "Python version")
         require(metadata["License-Expression"] == "MIT", "SPDX license")
         require(
@@ -35,11 +35,10 @@ def verify(wheel, sdist):
             "unexpected runtime dependency",
         )
         require(
-            set(metadata.get_all("License-File", []))
-            == {"LICENSE", "THIRD_PARTY_LICENSES/check-manifest-MIT.txt"},
+            set(metadata.get_all("License-File", [])) == {"LICENSE"},
             "license-file metadata",
         )
-        for name in ("LICENSE", "THIRD_PARTY_LICENSES/check-manifest-MIT.txt"):
+        for name in ("LICENSE",):
             require(package.read(f"{prefix}/licenses/{name}") == (root / name).read_bytes(), name)
         entry = package.read(f"{prefix}/entry_points.txt").decode()
         require("source-release-review = source_release_review.cli:main" in entry, "entrypoint")
@@ -83,7 +82,6 @@ def verify(wheel, sdist):
         names = {member.name for member in members}
         for name in (
             "LICENSE",
-            "THIRD_PARTY_LICENSES/check-manifest-MIT.txt",
             "README.md",
             "ORIGIN.md",
             "DEFENSIVE_SCOPE.md",

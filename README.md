@@ -1,7 +1,7 @@
 # SourceReleaseReview
 
 
-New implementation author: **dhtfish98**. Current project version: **0.1.1**.
+New implementation author: **dhtfish98**. Current project version: **0.1.2**.
 
 Compare an existing local source-release archive with an independently trusted path manifest. The new implementation reads actual tar or ZIP records and payload spans, preserves duplicate/link/path-conflict evidence, and reports required omissions and unapproved extras. It never extracts the archive, executes archived source, discovers VCS files, runs a target build or rewrites a manifest.
 

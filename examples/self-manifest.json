@@ -1,6 +1,6 @@
 {
   "schema_version": "1",
-  "root": "source_release_review-0.1.1",
+  "root": "source_release_review-0.1.2",
   "files": [
     ".github/workflows/ci.yml",
     ".gitignore",
@@ -11,7 +11,6 @@
     "README.md",
     "SOURCE_AUDIT.json",
     "SOURCE_REVIEW_MANIFEST.json",
-    "THIRD_PARTY_LICENSES/check-manifest-MIT.txt",
     "VALIDATION.md",
     "examples/release-manifest.json",
     "examples/sample-corrupt.zip",

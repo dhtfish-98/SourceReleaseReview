@@ -1,5 +1,4 @@
 include LICENSE README.md ORIGIN.md DEFENSIVE_SCOPE.md VALIDATION.md SOURCE_AUDIT.json requirements-dev.txt
-recursive-include THIRD_PARTY_LICENSES *.txt
 recursive-include src *.py py.typed
 recursive-include tests *.py
 recursive-include scripts *.py
@@ -21,7 +20,6 @@ include ORIGIN.md
 include README.md
 include SOURCE_AUDIT.json
 include SOURCE_REVIEW_MANIFEST.json
-include THIRD_PARTY_LICENSES/check-manifest-MIT.txt
 include VALIDATION.md
 include examples/release-manifest.json
 include examples/sample-corrupt.zip
@@ -47,5 +45,5 @@ include tests/test_files_cli.py
 include tests/test_inventory.py
 include tests/test_manifest.py
 include tests/test_provenance.py
-include tests/test_structures.py
 include tests/test_reader_capabilities.py
+include tests/test_structures.py
