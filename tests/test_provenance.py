@@ -8,7 +8,7 @@ def test_own_mit_license_and_frozen_reference_identity():
     content = (root / "LICENSE").read_bytes()
     assert b"Copyright (c) 2026 dhtfish98" in content
     assert b"THE SOFTWARE IS PROVIDED" in content
-    audit = json.loads((root / "SOURCE_AUDIT.json").read_text())
+    audit = json.loads((root / "项目文档/SOURCE_AUDIT.json").read_text())
     assert audit["commit"] == "5cdb776d4ad547518002ab33528b880b51378b48"
     license_record = next(item for item in audit["files"] if item["path"] == "LICENSE.rst")
     assert (

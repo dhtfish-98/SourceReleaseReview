@@ -11,25 +11,19 @@
       "path": ".github/workflows/ci.yml",
       "sha256": "5f90da0b4edede1c5c411949402f47275cb7307c562bedaeb8c2c5089a9199ea",
       "bytes": 3090,
-      "lines": 40
+      "lines": 64
     },
     {
       "path": ".gitignore",
       "sha256": "4c0263e5cf4ef951e418c84a52e408d5fcfca3cd4249b11579ae244d2354d89e",
       "bytes": 241,
-      "lines": 11
+      "lines": 18
     },
     {
       "path": "MANIFEST.in",
-      "sha256": "9a1df9b539ae35fb15b2ef46ce70731b23d70755f4f3ba444036042cbe54eea2",
-      "bytes": 2215,
-      "lines": 49
-    },
-    {
-      "path": "SOURCE_AUDIT.json",
-      "sha256": "8334d21d3bc70b23e9c127c19bdc922cb301ac046c7c0ee6253915b65207ae97",
-      "bytes": 3680,
-      "lines": 70
+      "sha256": "88ee4bb782e332fa8cc8906b0b0361b452037fb9dee415221eb780a98ffb369d",
+      "bytes": 2241,
+      "lines": 64
     },
     {
       "path": "examples/release-manifest.json",
@@ -63,9 +57,9 @@
     },
     {
       "path": "examples/self-manifest.json",
-      "sha256": "0da368922ad81ef64bb707f6b474590891c11ae39a21ed3c3ecc374694f30c09",
-      "bytes": 2058,
-      "lines": 52
+      "sha256": "9907345f15fb1391953d05da7c467fc37b103e04ade5dbf8d891b4019837049d",
+      "bytes": 2071,
+      "lines": 62
     },
     {
       "path": "pyproject.toml",
@@ -105,8 +99,8 @@
     },
     {
       "path": "scripts/verify_package.py",
-      "sha256": "0ea343113998b46d52c959ad9d957a49734d7c0e893db1f324208cc92de165fb",
-      "bytes": 5131,
+      "sha256": "e3d6c82e9ee933c471785625bfb336b6506cf737946b4042a7d838862113b92f",
+      "bytes": 5144,
       "lines": 123
     },
     {
@@ -171,8 +165,8 @@
     },
     {
       "path": "tests/test_provenance.py",
-      "sha256": "f5ef2d20d6611328913bfbc8abc6e557ad7fb61b83003a5efe7998201b1e234e",
-      "bytes": 744,
+      "sha256": "c2844d4542be6aa975d31e9dbc5a7fab58b9c5e13fc32be213b375d084360a61",
+      "bytes": 757,
       "lines": 18
     },
     {
@@ -193,8 +187,8 @@
       "path": "构建.py"
     },
     {
-      "sha256": "8282a9b715512229f917b40bcd350181085c0aa1440467b9dd260fb132a8b2e5",
-      "bytes": 1111,
+      "sha256": "d18c5376e5bb89b3f25b3c9a06187588cc377e1b2b2f511d256580dc8d678fbb",
+      "bytes": 1296,
       "path": "构建配置.json"
     },
     {
@@ -219,7 +213,13 @@
       "path": "项目文档/README.md",
       "sha256": "c29c63acc564fa681926dd57d9ba5bd0329657adb62439c0adfc7295b1309181",
       "bytes": 4618,
-      "lines": 53
+      "lines": 55
+    },
+    {
+      "path": "项目文档/SOURCE_AUDIT.json",
+      "sha256": "8334d21d3bc70b23e9c127c19bdc922cb301ac046c7c0ee6253915b65207ae97",
+      "bytes": 3680,
+      "lines": 70
     },
     {
       "path": "项目文档/VALIDATION.md",
