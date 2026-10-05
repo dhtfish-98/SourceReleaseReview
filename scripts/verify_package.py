@@ -27,7 +27,7 @@ def verify(wheel, sdist):
         prefix = metadata_path.rsplit("/", 1)[0]
         metadata = Parser().parsestr(package.read(metadata_path).decode())
         require(metadata["Name"] == "source-release-review", "name")
-        require(metadata["Version"] == "0.1.2", "version")
+        require(metadata["Version"] == "0.1.3", "version")
         require(metadata["Requires-Python"] == ">=3.11", "Python version")
         require(metadata["License-Expression"] == "MIT", "SPDX license")
         require(
